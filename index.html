@@ -2,12 +2,36 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>포트폴리오</title>
+    <title>파일 다운로드 페이지</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        .download-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h1>나의 Notion 포트폴리오</h1>
-    <p>아래 링크를 클릭하여 제 포트폴리오를 확인해주세요:</p>
-    <a href="https://www.notion.so/your-link" target="_blank">Notion 포트폴리오 보기</a>
+    <h1>다운로드 페이지</h1>
+    <p>아래 버튼을 눌러 파일을 다운로드하세요.</p>
+
+    <!-- CloudFront를 통해 S3 파일 다운로드 -->
+    <a class="download-btn" href="https://yunsang.cloud/manual.pdf" download>파일 다운로드</a>
 </body>
 </html>
