@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>파일 다운로드 페이지</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        .download-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>다운로드 페이지</h1>
+    <p>아래 버튼을 눌러 파일을 다운로드하세요.</p>
+
+    <!-- CloudFront를 통해 S3 파일 다운로드 -->
+    <a class="download-btn" href="https://yunsang.cloud/manual.pdf" download>파일 다운로드</a>
+</body>
+</html>
+
